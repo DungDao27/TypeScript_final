@@ -18,7 +18,7 @@ import Blog from './pages/Blog/Blog';
 import Events from './pages/Events/Events';
 import About from './pages/Abouts/About';
 import Course from './pages/Course/Course';
-import SearchPage from './pages/SearchPage/SearchPage';
+// import SearchPage from './pages/SearchPage/SearchPage';
 
 
 const root = ReactDOM.createRoot(
@@ -44,7 +44,7 @@ root.render(
           <Route path="thongtin" element={<About />} />
           <Route path="profile" element={<Profile />} />
           <Route path="khoahoc" element={<Course />} />
-          <Route path="timkiem:tuKhoa" element={<SearchPage />} />
+          {/* <Route path="timkiem:tuKhoa" element={<SearchPage />} /> */}
           <Route path="userProfile" element={<UserProfile />} />
           <Route path="detail">
             <Route path=":courseID" element={<CourseContent />} />
