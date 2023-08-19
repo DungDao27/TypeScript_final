@@ -47,7 +47,7 @@ const HomePage = (props: Props) => {
             <div className='smallBox smallboxRightBottom doubleBox'></div>
             {/* Slogan */}
             <div className='sloganContainer'>
-              <div><img className='sliderPlaneImg' src={require('../../Assets/Img/imgSlider/paper_plane.png').default} alt="" /></div>
+              <div><img className='sliderPlaneImg' src="./images/imgSlider/paper_plane.png" alt="" /></div>
               <h1>Chào mừng</h1>
               <h1>đến với môi trường </h1>
               <h1>V<span>learning</span></h1>
@@ -59,12 +59,12 @@ const HomePage = (props: Props) => {
             <div className='sliderRight'>
               <div className=''></div>
               <div>
-                <img className='sliderMainImg' src={require('../../Assets/Img/imgSlider/slider2.png').default} alt="" />
-                <img className='sliderSubImg sliderCodeImg' src={require('../../Assets/Img/imgSlider/code_slider.png').default} alt="" />
-                <img className='sliderSubImg sliderMesImg ' src={require('../../Assets/Img/imgSlider/message_slider.png').default} alt="" />
-                <img className='sliderSubImg sliderCloudImg' src={require('../../Assets/Img/imgSlider/clouds.png').default} alt="" />
-                <img className='sliderSubImg sliderCloud2Img' src={require('../../Assets/Img/imgSlider/clouds.png').default} alt="" />
-                <img className='sliderSubImg sliderCloud3Img' src={require('../../Assets/Img/imgSlider/clouds.png').default} alt="" />
+                <img className='sliderMainImg' src="./images/imgSlider/slider2.png" alt="" />
+                <img className='sliderSubImg sliderCodeImg' src="./images/imgSlider/code_slider.png').default}" alt="" />
+                <img className='sliderSubImg sliderMesImg ' src="./images/imgSlider/message_slider.png" alt="" />
+                <img className='sliderSubImg sliderCloudImg' src="./images/imgSlider/clouds.png" alt="" />
+                <img className='sliderSubImg sliderCloud2Img' src="./images/imgSlider/clouds.png" alt="" />
+                <img className='sliderSubImg sliderCloud3Img' src="./images/imgSlider/clouds.png" alt="" />
               </div>
             </div>
           </div>

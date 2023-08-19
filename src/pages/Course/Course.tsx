@@ -143,11 +143,6 @@ const Course = (props: Props) => {
                                     </div>
                                     <h5 className="mb-4">Web Design &amp; Development Course for Beginners</h5>
                                 </div>
-                                <div className="d-flex border-top">
-                                    <small className="flex-fill text-center border-end py-2"><i className="fa fa-user-tie text-info me-2" />Khai Truong</small>
-                                    <small className="flex-fill text-center border-end py-2"><i className="fa fa-clock text-info me-2" />1.49 Hrs</small>
-                                    <small className="flex-fill text-center py-2"><i className="fa fa-user text-info me-2" />30 Students</small>
-                                </div>
                             </div>
                         </div>
                     })}
