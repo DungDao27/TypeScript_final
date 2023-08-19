@@ -160,11 +160,6 @@ const Header = (props: Props) => {
             <li><NavLink to="/khoahoc">Khóa học</NavLink></li>
             <li><NavLink to="/blog">Blog</NavLink></li>
             <li className='eventHeader courseCate'><NavLink to="/sukien">Sự kiện</NavLink>
-              <ul className='courseCateList'>
-                <li><NavLink to="/sukien/newYear">Sự kiện Sale Đầu Năm</NavLink></li>
-                <li><NavLink to="/sukien/Noel">Sự kiện Giáng sinh</NavLink></li>
-                <li><NavLink to="/sukien/endYear">Sự kiện Cuối Năm</NavLink></li>
-              </ul>
             </li>
             <li><NavLink to="/thongtin">Thông tin</NavLink></li>
           </ul>

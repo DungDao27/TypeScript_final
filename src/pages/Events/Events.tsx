@@ -71,7 +71,7 @@ export default function Events() {
                 <div className='eventDetail'>
                     <div className='row'>
                         <div className="col-md-6 imgEvent">
-                            <img className='animate' src={require('../../Assets/Img/imgSlider/it.png').default} alt="" />
+                            <img className='animate' src="./images/imgSlider/it.png" alt="" />
                         </div>
                         <div className="col-md-6 infoEvent">
                             <h5>Sự kiện công nghệ dành cho startup</h5>
@@ -87,56 +87,56 @@ export default function Events() {
                     <div className='row speechDetail'>
                         <div className="col-xl-3 col-lg-4 col-md-6">
                             <div className='cardSpeecher'>
-                                <img src={require('../../Assets/Img/imgInstrutors/instrutor5.jpg').default} alt="" />
+                                <img src="./images/imgInstrutors/instrutor5.jpg" alt="" />
                                 <h6>Nguyễn Nhật</h6>
                                 <p>Ceo TechViet Production</p>
                             </div>
                         </div>
                         <div className="col-xl-3 col-lg-4 col-md-6">
                             <div className='cardSpeecher'>
-                                <img src={require('../../Assets/Img/imgInstrutors/instrutor6.jpg').default} alt="" />
+                                <img src="./images/imgInstrutors/instrutor6.jpg" alt="" />
                                 <h6>Nguyễn Nhật Nam</h6>
                                 <p>Ceo TechViet Production</p>
                             </div>
                         </div>
                         <div className="col-xl-3 col-lg-4 col-md-6">
                             <div className='cardSpeecher'>
-                                <img src={require('../../Assets/Img/imgInstrutors/instrutor7.jpg').default} alt="" />
+                                <img src="./images/imgInstrutors/instrutor7.jpg" alt="" />
                                 <h6>Nguyễn Nam</h6>
                                 <p>Ceo TechViet Production</p>
                             </div>
                         </div>
                         <div className="col-xl-3 col-lg-4 col-md-6">
                             <div className='cardSpeecher'>
-                                <img src={require('../../Assets/Img/imgInstrutors/instrutor8.jpg').default} alt="" />
+                                <img src="./images/imgInstrutors/instrutor8.jpg" alt="" />
                                 <h6>Jhonny Đặng</h6>
                                 <p>Ceo TechViet Production</p>
                             </div>
                         </div>
                         <div className="col-xl-3 col-lg-4 col-md-6">
                             <div className='cardSpeecher'>
-                                <img src={require('../../Assets/Img/imgInstrutors/instrutor9.jpg').default} alt="" />
+                                <img src="./images/imgInstrutors/instrutor9.jpg" alt="" />
                                 <h6>Ngô Henry</h6>
                                 <p>Ceo TechViet Production</p>
                             </div>
                         </div>
                         <div className="col-xl-3 col-lg-4 col-md-6">
                             <div className='cardSpeecher'>
-                                <img src={require('../../Assets/Img/imgInstrutors/instrutor10.jpg').default} alt="" />
+                                <img src="./images/imgInstrutors/instrutor10.jpg" alt="" />
                                 <h6>Vương Phạm Vn</h6>
                                 <p>Ceo TechViet Production</p>
                             </div>
                         </div>
                         <div className="col-xl-3 col-lg-4 col-md-6">
                             <div className='cardSpeecher'>
-                                <img src={require('../../Assets/Img/imgInstrutors/instrutor11.jpg').default} alt="" />
+                                <img src="./images/imgInstrutors/instrutor11.jpg" alt="" />
                                 <h6>Rober Imacu</h6>
                                 <p>Ceo TechViet Production</p>
                             </div>
                         </div>
                         <div className="col-xl-3 col-lg-4 col-md-6">
                             <div className='cardSpeecher'>
-                                <img src={require('../../Assets/Img/imgInstrutors/instrutor12.jpg').default} alt="" />
+                                <img src="./images/imgInstrutors/instrutor12.jpg" alt="" />
                                 <h6>Khoa Pug</h6>
                                 <p>Ceo TechViet Production</p>
                             </div>
@@ -148,25 +148,25 @@ export default function Events() {
                     <div className='row'>
                         <div className="col-xl-3 col-lg-6 col-md-6">
                             <div className='itemDonors'>
-                                <img src={require('../../Assets/Img/imgDonors/meta.jpg').default} alt="" />
+                                <img src="./images/imgDonors/meta.jpg" alt="" />
                                 <p>Facebook</p>
                             </div>
                         </div>
                         <div className="col-xl-3 col-lg-6 col-md-6">
                             <div className='itemDonors'>
-                                <img src={require('../../Assets/Img/imgDonors/microsoft.jpg').default} alt="" />
+                                <img src="./images/imgDonors/microsoft.jpg" alt="" />
                                 <p>Microsoft</p>
                             </div>
                         </div>
                         <div className="col-xl-3 col-lg-6 col-md-6">
                             <div className='itemDonors'>
-                                <img src={require('../../Assets/Img/imgDonors/Google-logo.jpg').default} alt="" />
+                                <img src="./images/imgDonors/Google-logo.jpg" alt="" />
                                 <p>Google</p>
                             </div>
                         </div>
                         <div className="col-xl-3 col-lg-6 col-md-6">
                             <div className='itemDonors'>
-                                <img src={require('../../Assets/Img/imgDonors/amazon.jpg').default} alt="" />
+                                <img src="./images/imgDonors/amazon.jpg" alt="" />
                                 <p>Amazon</p>
                             </div>
                         </div>

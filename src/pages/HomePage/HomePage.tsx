@@ -187,7 +187,6 @@ const HomePage = (props: Props) => {
         <div className="container-xxl py-5 category">
           <div className="container">
             <div className="text-center wow fadeInUp" data-wow-delay="0.2s">
-              <h6 className="section-title bg-white text-center text-primary px-3">Categories</h6>
               <h1 className="mb-5">Courses</h1>
             </div>
             <div className="row g-3">
@@ -231,7 +230,6 @@ const HomePage = (props: Props) => {
         <div className="container-xxl py-5">
           <div className="container-md">
             <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-              <h6 style={{ color: '#06BBCC' }} className="section-title bg-white text-center px-3">Courses</h6>
               <h1 className="mb-5">Popular Courses</h1>
             </div>
             <div className="row g-4 justify-content-center">
@@ -271,10 +269,6 @@ const HomePage = (props: Props) => {
                       </div>
                       <h5 className="mb-4">Web Design &amp; Development Course for Beginners</h5>
                     </div>
-                    <div className="d-flex border-top">
-                      <small className="flex-fill text-center border-end py-2"><i className="fa fa-user-tie text-info me-2" />Khai Truong</small>
-                      <small className="flex-fill text-center py-2"><i className="fa fa-user text-info me-2" />30 Students</small>
-                    </div>
                   </div>
                 </div>
               })}
@@ -288,7 +282,7 @@ const HomePage = (props: Props) => {
           <div className='row'>
             <div className='col-lg-3 p-4 col-md-6'>
               <div className='boxNumber' >
-                <div><img src="./images/003-students.png" className='imgIcon' alt="" /></div>
+                <div><img src="./images/imgIcon/003-students.png" className='imgIcon' alt="" /></div>
                 <div className='textNumber'>
                   <CountupNumber end='9000' />
                 </div>
@@ -297,7 +291,7 @@ const HomePage = (props: Props) => {
             </div>
             <div className="col-lg-3 p-4 col-md-6">
               <div className='boxNumber'>
-                <div><img src="./images/001-timetable.png" className='imgIcon' alt="" /></div>
+                <div><img src="./images/imgIcon/001-timetable.png" className='imgIcon' alt="" /></div>
                 <div className='textNumber'>
                   <CountupNumber end='1000' />
                 </div>
@@ -306,7 +300,7 @@ const HomePage = (props: Props) => {
             </div>
             <div className="col-lg-3 p-4 col-md-6">
               <div className='boxNumber'>
-                <div><img src="./images/002-hourglass.png" className='imgIcon' alt="" /></div>
+                <div><img src="./images/imgIcon/002-hourglass.png" className='imgIcon' alt="" /></div>
                 <div className='textNumber'>
                   <CountupNumber end='33200' />
                 </div>
@@ -315,7 +309,7 @@ const HomePage = (props: Props) => {
             </div>
             <div className="col-lg-3 p-4 col-md-6">
               <div className='boxNumber'>
-                <div><img src="./images/004-teacher.png" className='imgIcon' alt="" /></div>
+                <div><img src="./images/imgIcon/004-teacher.png" className='imgIcon' alt="" /></div>
                 <div className='textNumber'>
                   <CountupNumber end='400' />
                 </div>
@@ -334,7 +328,7 @@ const HomePage = (props: Props) => {
             <div className='row mt-4'>
               <div className="col-lg-2 col-md-3 col-sm-6 col-12">
                 <div className='instrutorContent'>
-                  <img src="./images/instrutor5.jpg" alt="" />
+                  <img src="./images/imgInstrutors/instrutor5.jpg" alt="" />
                   <h6>Big DadMoon</h6>
                   <div className='textReviewRole'>
                     <p>Chuyên gia lĩnh vực</p>
@@ -353,7 +347,7 @@ const HomePage = (props: Props) => {
               </div>
               <div className="col-lg-2 col-md-3 col-sm-6 col-12">
                 <div className='instrutorContent'>
-                  <img src="./images/instrutor6.jpg" alt="" />
+                  <img src="./images/imgInstrutors/instrutor6.jpg" alt="" />
                   <h6>IcarDi MenBor</h6>
                   <div className='textReviewRole'>
                     <p>Chuyên gia ngôn ngữ</p>
@@ -372,7 +366,7 @@ const HomePage = (props: Props) => {
               </div>
               <div className="col-lg-2 col-md-3 col-sm-6 col-12">
                 <div className='instrutorContent'>
-                  <img src="./images/instrutor7.jpg" alt="" />
+                  <img src="./images/imgInstrutors/instrutor7.jpg" alt="" />
                   <h6>Bladin Slaham</h6>
                   <div className='textReviewRole'>
                     <p>Chuyên gia hệ thống</p>
@@ -391,7 +385,7 @@ const HomePage = (props: Props) => {
               </div>
               <div className="col-lg-2 col-md-3 col-sm-6 col-12">
                 <div className='instrutorContent'>
-                  <img src="./images/instrutor8.jpg" alt="" />
+                  <img src="./images/imgInstrutors/instrutor8.jpg" alt="" />
                   <h6>Chris Andersan</h6>
                   <div className='textReviewRole'>
                     <p>Chuyên gia lĩnh vực</p>
@@ -410,7 +404,7 @@ const HomePage = (props: Props) => {
               </div>
               <div className="col-lg-2 col-md-3 col-sm-6 col-12">
                 <div className='instrutorContent'>
-                  <img src="./images/instrutor9.jpg" alt="" />
+                  <img src="./images/imgInstrutors/instrutor9.jpg" alt="" />
                   <h6>VueLo Gadi</h6>
                   <div className='textReviewRole'>
                     <p>Chuyên gia lĩnh vực</p>
@@ -429,7 +423,7 @@ const HomePage = (props: Props) => {
               </div>
               <div className="col-lg-2 col-md-3 col-sm-6 col-12">
                 <div className='instrutorContent'>
-                  <img src="./images/instrutor10.jpg" alt="" />
+                  <img src="./images/imgInstrutors/instrutor10.jpg" alt="" />
                   <h6>Hoàng Nam</h6>
                   <div className='textReviewRole'>
                     <p>Chuyên gia lĩnh vực</p>
@@ -448,7 +442,7 @@ const HomePage = (props: Props) => {
               </div>
               <div className="col-lg-2 col-md-3 col-sm-6 col-12">
                 <div className='instrutorContent'>
-                  <img src="./images/instrutor11.jpg" alt="" />
+                  <img src="./images/imgInstrutors/instrutor11.jpg" alt="" />
                   <h6>David Ngô Savani</h6>
                   <div className='textReviewRole'>
                     <p>Chuyên gia lĩnh vực</p>
@@ -492,7 +486,7 @@ const HomePage = (props: Props) => {
               <div className="col-md-6">
                 <div className='reviewImg'>
                   <div className='bgStudentReview'></div>
-                  <img src="./images/avatarReview.png" alt="" />
+                  <img src="./images/ImgAvatar/avatarReview.png" alt="" />
                 </div>
               </div>
               <div className="col-md-6 quoteRight">

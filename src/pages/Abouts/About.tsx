@@ -19,14 +19,14 @@ export default function About() {
                             <p>Đây là nền tảng giảng dạy và học tập trực tuyến được xây dựng để hỗ trợ phát triển giáo dục trong thời đại công nghiệp 4.0, được xây dựng dựa trên cơ sở quan sát toàn bộ các nhu cầu cần thiết của một lớp học offline. Từ đó đáp ứng và đảm bảo cung cấp các công cụ toàn diện, dễ sử dụng cho giáo viên và học sinh, giúp tạo nên một lớp học trực tuyến thú vị và hấp dẫn.</p>
                         </div>
                         <div className='col-md-6 bgAboutGreen'>
-                            <img src={require('../../Assets/Img/imgAbout/hero-flex.png').default} alt="" />
+                            <img src="./images/imgAbout/hero-flex.png" alt="" />
                         </div>
                     </div>
                 </div>
                 <div className='AboutItem '>
                     <div className='row reAboutItem'>
                         <div className='col-md-6 bgAboutBlue '>
-                            <img src={require('../../Assets/Img/imgAbout/education-hero.png').default} alt="" />
+                            <img src="./images/imgAbout/education-hero.png" alt="" />
                         </div>
                         <div className='col-md-6'>
                             <h6>Chương trình học V learning</h6>
@@ -43,14 +43,14 @@ export default function About() {
                             <p>Trở thành hệ thống đào tạo lập trình chuyên sâu theo nghề hàng đầu khu vực, cung cấp nhân lực có tay nghề cao, chuyên môn sâu cho sự phát triển công nghiệp phần mềm trong thời đại công nghệ số hiện nay, góp phần giúp sự phát triển của xã hội, đưa Việt Nam thành cường quốc về phát triển phần mềm.giúp người học phát triển cả tư duy, phân tích, chuyên sâu nghề nghiệp, học tập suốt đời, sẵn sàng đáp ứng mọi nhu cầu của doanh nghiệp.</p>
                         </div>
                         <div className='col-md-6 bgAboutGreen'>
-                            <img src={require('../../Assets/Img/imgAbout/olstudy.png').default} alt="" />
+                            <img src="./images/imgAbout/olstudy.png" alt="" />
                         </div>
                     </div>
                 </div>
                 <div className='AboutItem'>
                     <div className='row reAboutItem'>
                         <div className='col-md-6 bgAboutBlue'>
-                            <img src={require('../../Assets/Img/imgAbout/students.png').default} alt="" />
+                            <img src="./images/imgAbout/students.png" alt="" />
                         </div>
                         <div className='col-md-6'>
                             <h6>Sứ mệnh V learning</h6>

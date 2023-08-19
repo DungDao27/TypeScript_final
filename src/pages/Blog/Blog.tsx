@@ -20,12 +20,12 @@ export default function Blog() {
                                             <div className='cardBlogContent'>
                                                 <div className='imgCardBlog'>
                                                     <img
-                                                        src="https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1671/61b6368a3a089.jpg"
+                                                        src="./images/time.jpg"
                                                         onError={(e) => {
                                                             const target = e.target as HTMLImageElement;
                                                             target.onerror = null; // Reset the onerror handler to avoid an infinite loop
                                                             target.src =
-                                                                "https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1671/61b6368a3a089.jpg";
+                                                                "#";
                                                         }}
                                                         alt=""
                                                     />
@@ -50,12 +50,12 @@ export default function Blog() {
                                             <div className='cardBlogContent'>
                                                 <div className='imgCardBlog'>
                                                     <img
-                                                        src="https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1671/61b6368a3a089.jpg"
+                                                        src="./images/tailwind-css.jpg"
                                                         onError={(e) => {
                                                             const target = e.target as HTMLImageElement;
                                                             target.onerror = null; // Reset the onerror handler to avoid an infinite loop
                                                             target.src =
-                                                                "https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1671/61b6368a3a089.jpg";
+                                                                "#";
                                                         }}
                                                         alt=""
                                                     />
@@ -80,12 +80,12 @@ export default function Blog() {
                                             <div className='cardBlogContent'>
                                                 <div className='imgCardBlog'>
                                                     <img
-                                                        src="https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1671/61b6368a3a089.jpg"
+                                                        src="./images/html.png"
                                                         onError={(e) => {
                                                             const target = e.target as HTMLImageElement;
                                                             target.onerror = null; // Reset the onerror handler to avoid an infinite loop
                                                             target.src =
-                                                                "https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1671/61b6368a3a089.jpg";
+                                                                "#";
                                                         }}
                                                         alt=""
                                                     />
@@ -111,12 +111,12 @@ export default function Blog() {
                                             <div className='cardBlogContent'>
                                                 <div className='imgCardBlog'>
                                                     <img
-                                                        src="https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1671/61b6368a3a089.jpg"
+                                                        src="./images/reactjs.png"
                                                         onError={(e) => {
                                                             const target = e.target as HTMLImageElement;
                                                             target.onerror = null; // Reset the onerror handler to avoid an infinite loop
                                                             target.src =
-                                                                "https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1671/61b6368a3a089.jpg";
+                                                                "#";
                                                         }}
                                                         alt=""
                                                     />
@@ -142,12 +142,12 @@ export default function Blog() {
                                                 <div className='imgCardBlog'>
 
                                                     <img
-                                                        src="https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1671/61b6368a3a089.jpg"
+                                                        src="./images/component.png"
                                                         onError={(e) => {
                                                             const target = e.target as HTMLImageElement;
                                                             target.onerror = null; // Reset the onerror handler to avoid an infinite loop
                                                             target.src =
-                                                                "https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1671/61b6368a3a089.jpg";
+                                                                "#";
                                                         }}
                                                         alt=""
                                                     />
@@ -173,12 +173,12 @@ export default function Blog() {
                                                 <div className='imgCardBlog'>
 
                                                     <img
-                                                        src="https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1671/61b6368a3a089.jpg"
+                                                        src="./images/material.png"
                                                         onError={(e) => {
                                                             const target = e.target as HTMLImageElement;
                                                             target.onerror = null; // Reset the onerror handler to avoid an infinite loop
                                                             target.src =
-                                                                "https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1671/61b6368a3a089.jpg";
+                                                                "#";
                                                         }}
                                                         alt=""
                                                     />
@@ -204,12 +204,12 @@ export default function Blog() {
                                                 <div className='imgCardBlog'>
 
                                                     <img
-                                                        src="https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1671/61b6368a3a089.jpg"
+                                                        src="./images/javascript.png"
                                                         onError={(e) => {
                                                             const target = e.target as HTMLImageElement;
                                                             target.onerror = null; // Reset the onerror handler to avoid an infinite loop
                                                             target.src =
-                                                                "https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1671/61b6368a3a089.jpg";
+                                                                "#";
                                                         }}
                                                         alt=""
                                                     />
@@ -233,12 +233,12 @@ export default function Blog() {
                                         <div className='cardBlog'>
                                             <div className='cardBlogContent'>
                                                 <img
-                                                    src="https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1671/61b6368a3a089.jpg"
+                                                    src="./images/typescript.png"
                                                     onError={(e) => {
                                                         const target = e.target as HTMLImageElement;
                                                         target.onerror = null; // Reset the onerror handler to avoid an infinite loop
                                                         target.src =
-                                                            "https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1671/61b6368a3a089.jpg";
+                                                            "#";
                                                     }}
                                                     alt=""
                                                 />
@@ -278,11 +278,11 @@ export default function Blog() {
                                 <div className='blogRightBox'>
                                     <h6>Bài đăng được đề xuất</h6>
                                     <div className='postBlog'>
-                                        <img src="https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1027/6174b331c4b4f.png" alt="" />
+                                        <img src="./images/reactlogo.png" alt="" />
                                         <h6>Routing trong reactjs</h6>
                                         <p className='colorCardTitle'>Chúng ta sẽ cùng nhau tìm hiểu cách routing trong reactjs...</p>
                                         <div className='imgPost'>
-                                            <img src={require('../../Assets/Img/imgInstrutors/instrutor13.jpg').default} alt="" />
+                                            <img src="./images/imgInstrutors/instrutor6.jpg" alt="" />
                                             <span className='colorCardTitle'> Nguyên Văn</span>
                                         </div>
                                     </div>
@@ -291,7 +291,7 @@ export default function Blog() {
                                         <h6>Lập trình hướng đối tượng oop</h6>
                                         <p className='colorCardTitle'>Chúng ta sẽ cùng nhau tìm hiểu cách oop trong reactjs...</p>
                                         <div className='imgPost'>
-                                            <img src={require('../../Assets/Img/imgInstrutors/instrutor12.jpg').default} alt="" />
+                                            <img src="./images/imgInstrutors/instrutor8.jpg" alt="" />
                                             <span className='colorCardTitle'> Nguyên Văn Vũ</span>
                                         </div>
                                     </div>
@@ -300,7 +300,7 @@ export default function Blog() {
                                         <h6>Xử Lý Bất Đồng Bộ Trong Javascript</h6>
                                         <p className='colorCardTitle'>Chắc chắn khi lập trình, bạn sẽ có các công việc cần thời gian delay (gọi API, lấy dữ liệu từ Database, đọc/ghi file,...). Và đây...</p>
                                         <div className='imgPost'>
-                                            <img src={require('../../Assets/Img/imgInstrutors/instrutor11.jpg').default} alt="" />
+                                            <img src="./images/imgInstrutors/instrutor9.jpg" alt="" />
                                             <span className='colorCardTitle'> Nguyên Minh</span>
                                         </div>
                                     </div>
