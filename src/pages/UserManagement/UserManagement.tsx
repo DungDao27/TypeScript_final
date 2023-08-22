@@ -38,10 +38,10 @@ const { TabPane } = Tabs;
 type Props = {};
 
 const UserManagement = (props: Props) => {
-  const [selectedUser, setSelectedUser] = useState< User | null>(null);
+  const [selectedUser, setSelectedUser] = useState<User | null>(null);
   const [searchKeyword, setSearchKeyword] = useState<string>("");
   const { arrCourse } = useSelector((state: RootState) => state.courseReducer);
-  const {userLogin} = useSelector((state:RootState)=> state.userReducer)
+  const { userLogin } = useSelector((state: RootState) => state.userReducer)
   if (!getStoreJson(USER_LOGIN)) {
     history.push('/')
   }
@@ -59,7 +59,7 @@ const UserManagement = (props: Props) => {
     studentsUnregisterd,
   } = useSelector((state: RootState) => state.adminReducer);
   const filteredUserList = userList.filter((item) =>
-    item.hoTen  .toLowerCase().includes(searchKeyword.toLowerCase())
+    item.hoTen.toLowerCase().includes(searchKeyword.toLowerCase())
   );
   const getArrCourses = async () => {
     const action = getCoursesApi();
@@ -122,7 +122,7 @@ const UserManagement = (props: Props) => {
 
   const [enrollModalData, setEnrollModalData] = useState<MyObject | null>(null);
 
-  
+
   const handleTabChange = (key: string) => {
     setActiveTab(key);
   };
@@ -148,21 +148,21 @@ const UserManagement = (props: Props) => {
           studentsUnregistered={studentsUnregisterd}
           courseDetail={courseDetail}
         />
-         <EditUserModal user={selectedUser} />
+        <EditUserModal user={selectedUser} />
         <AddUserModal />
-        <AddCourseModal/>
+        <AddCourseModal />
         <EnrollModal data={enrollModalData} />
-       
+
         <Tabs activeKey={activeTab} onChange={handleTabChange}>
           <TabPane className='fw-semibold' tab="USERS" key="users">
-          <div className="search-bar">
-          <input
-            type="text"
-            value={searchKeyword}
-            onChange={(e) => setSearchKeyword(e.target.value)}
-            placeholder="Search by name..."
-          />
-        </div>
+            <div className="search-bar">
+              <input
+                type="text"
+                value={searchKeyword}
+                onChange={(e) => setSearchKeyword(e.target.value)}
+                placeholder="Search by name..."
+              />
+            </div>
             {/* User table content */}
             <div className="table-responsive">
               <div className="table-wrapper">
@@ -195,7 +195,9 @@ const UserManagement = (props: Props) => {
                       <th>Name</th>
                       <th>Email</th>
                       <th>Phone</th>
-                      <th>Action</th>
+                      <th className="text-center">
+                        <i className="fa fa-cog"></i>
+                      </th>
                     </tr>
                   </thead>
                   {/* Table body */}
@@ -258,7 +260,7 @@ const UserManagement = (props: Props) => {
                                 >
                                   Edit
                                 </button>
-                                <button className="btn btn-danger">Del</button>
+                                <button className="btn btn-danger">Delete</button>
                               </div>
                             </td>
                           </tr>
@@ -357,7 +359,7 @@ const UserManagement = (props: Props) => {
                                     getStudentsUnregisterdApi(courseId);
                                   dispatch(action3);
                                 }}
-                                className="btn btn-success mx-1"
+                                className="btn btn-info mx-1"
                                 data-bs-toggle="modal"
                                 data-bs-target="#courseModal"
                               >
@@ -371,7 +373,7 @@ const UserManagement = (props: Props) => {
                                   marginRight: "5px",
                                   verticalAlign: "middle",
                                 }}
-                                className="btn btn-info"
+                                className="btn btn-warning"
                               >
                                 Edit
                               </button>
@@ -383,9 +385,9 @@ const UserManagement = (props: Props) => {
                                   dispatch(action);
                                 }}
                                 style={{ verticalAlign: "middle" }}
-                                className="btn btn-info"
+                                className="btn btn-danger"
                               >
-                                Del
+                                Delete
                               </button>
                             </td>
                           </tr>
@@ -406,12 +408,11 @@ const UserManagement = (props: Props) => {
                 </div>
               </div>
             </div>
-            
+
           </TabPane>
         </Tabs>
       </div>
     </div>
   );
 };
-
 export default UserManagement;

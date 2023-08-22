@@ -49,15 +49,15 @@ const CourseModal: React.FC<CourseModalProps> = ({
     dispatch(action);
   };
 
-  const getStudentsofCourse = async (courseID : CourseId) => {
+  const getStudentsofCourse = async (courseID: CourseId) => {
     const action = getStudentsofCourseApi(courseID);
-    dispatch (action)
+    dispatch(action)
   }
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [currentPage2, setCurrentPage2] = useState<number>(1);
 
-  const itemsPerPage = 3; 
-  const itemsPerPage2 = 3; 
+  const itemsPerPage = 3;
+  const itemsPerPage2 = 3;
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
@@ -94,7 +94,7 @@ const CourseModal: React.FC<CourseModalProps> = ({
           <div className="modal-content">
             <div className="modal-header ">
               <h5 className="modal-title" id="modalTitleId">
-               Course Management
+                Course Management
               </h5>
               <button
                 type="button"
@@ -105,33 +105,33 @@ const CourseModal: React.FC<CourseModalProps> = ({
             </div>
             <div className="modal-body">
               <div className="d-flex align-items-center">
-              
+
                 <Select className="w-75"
-  options={studentsUnregistered?.map((item) => ({
-    value: item.taiKhoan,
-    label: item.hoTen,
-  }))}
-  value={selectedUser ? { value: selectedUser, label: selectedUser } : null}
-  onChange={(selectedOption) => setSelectedUser(selectedOption?.value || null)}
-  placeholder="Select a user"
-/>
+                  options={studentsUnregistered?.map((item) => ({
+                    value: item.taiKhoan,
+                    label: item.hoTen,
+                  }))}
+                  value={selectedUser ? { value: selectedUser, label: selectedUser } : null}
+                  onChange={(selectedOption) => setSelectedUser(selectedOption?.value || null)}
+                  placeholder="Select a user"
+                />
                 <span className="d-inline-block ms-3 ">
-                 
+
                   <button
-                    onClick={async() => {
+                    onClick={async () => {
                       if (selectedUser) {
                         const courseId = {
-                          maKhoaHoc : courseDetail?.maKhoaHoc
+                          maKhoaHoc: courseDetail?.maKhoaHoc
                         }
                         const userInfo = {
                           maKhoaHoc: courseDetail?.maKhoaHoc,
                           taiKhoan: selectedUser,
                         };
-                         
+
                         const action = confirmCourseApi(userInfo);
-                       await dispatch(action);
-                       setSelectedUser(null);
-                       getStudentsofCourse(courseId)
+                        await dispatch(action);
+                        setSelectedUser(null);
+                        getStudentsofCourse(courseId)
                       }
                     }}
                     className="btn btn-info "
@@ -153,70 +153,70 @@ const CourseModal: React.FC<CourseModalProps> = ({
                   </tr>
                 </thead>
                 <tbody>
-                {studentsWaiting
-              ?.slice(indexOfFirstItem, indexOfLastItem)
-              .map((item, index) => {
-                const actualIndex = (currentPage - 1) * 3 + index + 1;
-                    return (
-                      <tr key={index}>
-                        <td>{actualIndex}</td>
-                        <td>{item.taiKhoan}</td>
-                        <td>{item.hoTen}</td>
-                        <td style={{ whiteSpace: "nowrap" }}>
-                          <button onClick={ async()=> {
-                             const courseId = {
-                              maKhoaHoc : courseDetail?.maKhoaHoc
-                            }
-                            const userInfo = {
-                              maKhoaHoc: courseDetail?.maKhoaHoc,
-                              taiKhoan: item.taiKhoan,
-                            };
-                            const action = confirmCourseApi (userInfo )
-                           await  dispatch(action)
-                           const action2 = deleteConfirmedCourse(courseDetail?.maKhoaHoc);
-                           dispatch (action2)
+                  {studentsWaiting
+                    ?.slice(indexOfFirstItem, indexOfLastItem)
+                    .map((item, index) => {
+                      const actualIndex = (currentPage - 1) * 3 + index + 1;
+                      return (
+                        <tr key={index}>
+                          <td>{actualIndex}</td>
+                          <td>{item.taiKhoan}</td>
+                          <td>{item.hoTen}</td>
+                          <td style={{ whiteSpace: "nowrap" }}>
+                            <button onClick={async () => {
+                              const courseId = {
+                                maKhoaHoc: courseDetail?.maKhoaHoc
+                              }
+                              const userInfo = {
+                                maKhoaHoc: courseDetail?.maKhoaHoc,
+                                taiKhoan: item.taiKhoan,
+                              };
+                              const action = confirmCourseApi(userInfo)
+                              await dispatch(action)
+                              const action2 = deleteConfirmedCourse(courseDetail?.maKhoaHoc);
+                              dispatch(action2)
 
-                            getStudentsofCourse (courseId)
-                            getStudentUnregistered(courseId);
-                            getStudentsWating(courseId)
-                          }}
-                            style={{
-                              marginRight: "5px",
-                              verticalAlign: "middle",
+                              getStudentsofCourse(courseId)
+                              getStudentUnregistered(courseId);
+                              getStudentsWating(courseId)
                             }}
-                            className="btn btn-primary"
-                          >
-                            Confirm
-                          </button>
-                          <button onClick={ async () => {
-                             const courseId = {
-                              maKhoaHoc : courseDetail?.maKhoaHoc
-                            }
-                             const userInfo = {
-                              maKhoaHoc: courseDetail?.maKhoaHoc,
-                              taiKhoan: item.taiKhoan,
-                            };
-                            
-                            const action = cancelCourseApi (userInfo)
-                           await dispatch (action)
-                           getStudentsofCourse (courseId)
-                           getStudentUnregistered(courseId);
-                           getStudentsWating(courseId)
+                              style={{
+                                marginRight: "5px",
+                                verticalAlign: "middle",
+                              }}
+                              className="btn btn-primary"
+                            >
+                              Confirm
+                            </button>
+                            <button onClick={async () => {
+                              const courseId = {
+                                maKhoaHoc: courseDetail?.maKhoaHoc
+                              }
+                              const userInfo = {
+                                maKhoaHoc: courseDetail?.maKhoaHoc,
+                                taiKhoan: item.taiKhoan,
+                              };
 
-                           
-                          }} className="btn btn-danger">Del</button>
-                        </td>
-                      </tr>
-                    );
-                  })}
+                              const action = cancelCourseApi(userInfo)
+                              await dispatch(action)
+                              getStudentsofCourse(courseId)
+                              getStudentUnregistered(courseId);
+                              getStudentsWating(courseId)
+
+
+                            }} className="btn btn-danger">Delete</button>
+                          </td>
+                        </tr>
+                      );
+                    })}
                 </tbody>
               </table>
               <Pagination className="text-center"
-          current={currentPage}
-          onChange={handlePageChange}
-          total={studentsWaiting?.length || 0}
-          pageSize={itemsPerPage}
-        />
+                current={currentPage}
+                onChange={handlePageChange}
+                total={studentsWaiting?.length || 0}
+                pageSize={itemsPerPage}
+              />
               <hr />
               <p className="text-center fw-bold fs-4">Students registerd</p>
               <table className="table">
@@ -229,46 +229,46 @@ const CourseModal: React.FC<CourseModalProps> = ({
                   </tr>
                 </thead>
                 <tbody>
-                {studentsofCourse
-              ?.slice(indexOfFirstItem2, indexOfLastItem2)
-              .map((item, index) => {
-                const actualIndex = (currentPage2 - 1) * 3 + index + 1;
-                    return (
-                      <tr key={index}>
-                        <td>{actualIndex}</td>
-                        <td>{item.taiKhoan}</td>
-                        <td>{item.hoTen}</td>
-                        <td>
-                          <button onClick={async()=>{
-                             const courseId = {
-                              maKhoaHoc : courseDetail?.maKhoaHoc
-                            }
-                             const userInfo = {
-                              maKhoaHoc: courseDetail?.maKhoaHoc,
-                              taiKhoan: item.taiKhoan,
-                            };
-                            
-                            const action = cancelCourseApi (userInfo)
-                           await dispatch (action)
-                           getStudentsofCourse (courseId)
-                           getStudentUnregistered(courseId);
-                           getStudentsWating(courseId)
+                  {studentsofCourse
+                    ?.slice(indexOfFirstItem2, indexOfLastItem2)
+                    .map((item, index) => {
+                      const actualIndex = (currentPage2 - 1) * 3 + index + 1;
+                      return (
+                        <tr key={index}>
+                          <td>{actualIndex}</td>
+                          <td>{item.taiKhoan}</td>
+                          <td>{item.hoTen}</td>
+                          <td>
+                            <button onClick={async () => {
+                              const courseId = {
+                                maKhoaHoc: courseDetail?.maKhoaHoc
+                              }
+                              const userInfo = {
+                                maKhoaHoc: courseDetail?.maKhoaHoc,
+                                taiKhoan: item.taiKhoan,
+                              };
 
-                          }} className="btn btn-danger w-100">
-                            Delete
-                          </button>
-                        </td>
-                      </tr>
-                    );
-                  })}
+                              const action = cancelCourseApi(userInfo)
+                              await dispatch(action)
+                              getStudentsofCourse(courseId)
+                              getStudentUnregistered(courseId);
+                              getStudentsWating(courseId)
+
+                            }} className="btn btn-danger w-100">
+                              Delete
+                            </button>
+                          </td>
+                        </tr>
+                      );
+                    })}
                 </tbody>
               </table>
               <Pagination className="text-center"
-          current={currentPage2}
-          onChange={handlePageChange2}
-          total={studentsofCourse?.length || 0}
-          pageSize={itemsPerPage2}
-        />
+                current={currentPage2}
+                onChange={handlePageChange2}
+                total={studentsofCourse?.length || 0}
+                pageSize={itemsPerPage2}
+              />
               {/* End of Table */}
             </div>
             <div className="modal-footer">

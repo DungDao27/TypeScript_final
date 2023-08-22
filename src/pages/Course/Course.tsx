@@ -12,7 +12,6 @@ import {
     themKhoaHocApi,
 } from "../../redux/reducers/adminReducer";
 import { Button, Pagination } from "antd";
-import { useFormik } from "formik";
 import {
     getCategoryApi,
     getCoursesApi,
@@ -66,26 +65,7 @@ const Course = (props: Props) => {
     console.log(courseDetail);
     const dispatch: DispatchType = useDispatch();
     const [currentPage, setCurrentPage] = useState(1);
-    const form = useFormik({
-        initialValues: {
-            maKhoaHoc: "",
-            biDanh: "tltltl",
-            tenKhoaHoc: "",
-            moTa: "",
-            luotXem: 0,
-            danhGia: 0,
-            hinhAnh: "",
-            maNhom: "",
-            ngayTao: "",
-            maDanhMucKhoaHoc: "",
-            taiKhoanNguoiTao: `${getStoreJson(USER_LOGIN).taiKhoan}`,
-        },
-        onSubmit: (values: KhoaHoc) => {
-            console.log(values);
 
-        }
-    },
-    )
 
     const handlePageChange = (page: number) => {
         setCurrentPage(page);
@@ -213,12 +193,12 @@ const Course = (props: Props) => {
                 {/* Pagination */}
                 <div className="courseListPage">
                     <ul className="pagination">
-                    <Pagination
-                      defaultCurrent={1}
-                      total={arrCourse.length}
-                      pageSize={6}
-                      onChange={handlePageChange}
-                    />
+                        <Pagination
+                            defaultCurrent={1}
+                            total={arrCourse.length}
+                            pageSize={6}
+                            onChange={handlePageChange}
+                        />
                     </ul>
                 </div>
             </section>

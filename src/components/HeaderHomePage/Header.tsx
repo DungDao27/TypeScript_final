@@ -26,7 +26,7 @@ const Header = (props: Props) => {
       keyInput.current.value = ''
     }
   }
-  
+
 
   const handleSubmitSearchMobile = async (e: any) => {
     e.preventDefault()
@@ -147,7 +147,7 @@ const Header = (props: Props) => {
             {/* <span className='textE'>V</span>learning <i className="far fa-keyboard iconLogo"></i> */}
             <img src="./logo.png" alt="..." width={250} />
           </NavLink>
-          <form action="#" onSubmit={handleSubmitSearch} ><input ref={keyInput} className='searchForm' type="text" placeholder="Tìm kiếm" /></form>
+          <form><input className='searchForm' type="text" placeholder="Tìm kiếm" /></form>
         </div>
 
         <div className='headerRight'>

@@ -199,7 +199,7 @@ const EnrollModal = ({ data }: EnrollModalProps) => {
 
                                 getUnregisteredCourses();
                                 confirmedCourses();
-                              }} className="btn btn-danger mx-2">Del</button>
+                              }} className="btn btn-danger mx-2">Delete</button>
                           </td>
                         </tr>
                       );

@@ -51,7 +51,7 @@ const HomePage = (props: Props) => {
               <h1>Chào mừng</h1>
               <h1>đến với môi trường </h1>
               <h1>V<span>learning</span></h1>
-              <button className='btnGlobal btnSlider mt-4'>Bắt đâu nào</button>
+              <NavLink to={`/khoahoc`} className="" ><button className='btnGlobal btnSlider mt-4'>Bắt đâu nào</button></NavLink>
             </div>
           </div>
           {/* Slider Right */}
